@@ -10,6 +10,9 @@ Performs statistics on region info from perf SPE data:
 - Calculate code heat for each region
 - Calculate branch jump relations between regions
 
+The outputs are serial of PNG files. 
+Touch ratio means how many small code chunks in a 2 MB region are touched. 
+
 If you find active region count is much larger than region buffer count
 of your Arm CPU model, and the touch ratio are really low, PGO/AutoFDO
 may help in performance improvement. 
