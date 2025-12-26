@@ -1,10 +1,18 @@
-# SPE Region and Java Code Region Mapping Tools
+# Code Region Statistics and Java Code Region Mapping Tools
+
+spe-region.py and region_map.py are two separate tools. 
+
+---
 
 ## spe-region.py
 
 Performs statistics on region info from perf SPE data:
 - Calculate code heat for each region
 - Calculate branch jump relations between regions
+
+If you find active region count is much larger than region buffer count
+of your Arm CPU model, and the touch ratio are really low, PGO/AutoFDO
+may help in performance improvement. 
 
 ### How to run
 
